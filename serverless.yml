@@ -9,4 +9,4 @@ functions:
   function1:
     handler: index.handler
     events:
-      - GET fun
+      - http: GET fun
