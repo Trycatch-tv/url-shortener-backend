@@ -1,5 +1,5 @@
 service: url-shortener-backend
-frameworkVersion: '3'
+frameworkVersion: "3"
 
 provider:
   name: aws
@@ -8,3 +8,5 @@ provider:
 functions:
   function1:
     handler: index.handler
+    events:
+      - GET fun
