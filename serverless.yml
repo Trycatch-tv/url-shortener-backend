@@ -11,7 +11,7 @@ functions:
     events:
       - http: GET fun
   crearEnlace:
-    handler: enlaces/crear/crear.enlaces.handler
+    handler: enlaces/crear/crear.handler
     events:
       - http: GET enlaces/crear
 
