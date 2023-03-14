@@ -12,7 +12,7 @@ functions:
       - http: GET fun
 
 resources:
-  Resource:
+  Resources:
     Type: AWS::DynamoDB::Table
     Properties: TableName:DBTest
     AttributeDefinitions:
