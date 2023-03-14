@@ -10,6 +10,10 @@ functions:
     handler: index.handler
     events:
       - http: GET fun
+  crearEnlace:
+    handler: enlaces/crear/crear.enlaces.handler
+    events:
+      - http: GET enlaces/crear
 
 resources:
   Resources:
