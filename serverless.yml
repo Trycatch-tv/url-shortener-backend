@@ -4,6 +4,13 @@ frameworkVersion: "3"
 provider:
   name: aws
   runtime: nodejs18.x
+  region: "us-east-1"
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource:
+        "Fn::GetAtt": ["TestTable"]
 
 functions:
   function1:
