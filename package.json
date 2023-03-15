@@ -1,0 +1,53 @@
+{
+  "name": "url-shortener-backend",
+  "version": "1.0.0",
+  "description": "<!-- title: 'AWS NodeJS Example' description: 'This template demonstrates how to deploy a NodeJS function running on AWS Lambda using the traditional Serverless Framework.' layout: Doc framework: v3 platform: AWS language: nodeJS priority: 1 authorLink: 'https://github.com/serverless' authorName: 'Serverless, inc.' authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4' -->",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1335.0",
+    "available-typed-arrays": "^1.0.5",
+    "call-bind": "^1.0.2",
+    "base64-js": "^1.5.1",
+    "buffer": "^4.9.2",
+    "events": "^1.1.1",
+    "for-each": "^0.3.3",
+    "function-bind": "^1.1.1",
+    "gopd": "^1.0.1",
+    "has": "^1.0.3",
+    "get-intrinsic": "^1.2.0",
+    "has-symbols": "^1.0.3",
+    "inherits": "^2.0.4",
+    "ieee754": "^1.1.13",
+    "is-arguments": "^1.1.1",
+    "has-tostringtag": "^1.0.0",
+    "is-callable": "^1.2.7",
+    "is-generator-function": "^1.0.10",
+    "is-typed-array": "^1.1.10",
+    "isarray": "^1.0.0",
+    "jmespath": "^0.16.0",
+    "punycode": "^1.3.2",
+    "querystring": "^0.2.0",
+    "sax": "^1.2.1",
+    "url": "^0.10.3",
+    "util": "^0.12.5",
+    "uuid": "^8.0.0",
+    "xmlbuilder": "^9.0.7",
+    "xml2js": "^0.4.19",
+    "which-typed-array": "^1.1.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trycatch-tv/url-shortener-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trycatch-tv/url-shortener-backend/issues"
+  },
+  "homepage": "https://github.com/Trycatch-tv/url-shortener-backend#readme"
+}
