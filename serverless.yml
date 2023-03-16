@@ -24,6 +24,10 @@ functions:
     handler: enlaces/listar/listar.handler
     events:
       - http: GET enlaces/listar
+  enlace:
+    handler: enlaces/enlace/enlace.handler
+    events:
+      - http: GET enlaces/{id}
 resources:
   Resources:
     EnlaceTable:
