@@ -32,6 +32,10 @@ functions:
     handler: enlaces/actualizar/actualizar.handler
     events:
       - http: GET enlaces/actualizar/{id}
+  eliminarEnlace:
+    handler: enlaces/eliminar/eliminar.handler
+    events:
+      - http: GET enlaces/eliminar/{id}
 resources:
   Resources:
     EnlaceTable:
