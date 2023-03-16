@@ -9,8 +9,7 @@ provider:
     - Effect: Allow
       Action:
         - dynamodb:*
-      Resource:
-        "Fn::GetAtt": ["TestTable"]
+      Resource: !GetAtt EnlaceTable.Arn
 
 functions:
   function1:
@@ -21,13 +20,16 @@ functions:
     handler: enlaces/crear/crear.handler
     events:
       - http: GET enlaces/crear
-
+  listarEnlaces:
+    handler: enlaces/listar/listar.handler
+    events:
+      - http: GET enlaces/listar
 resources:
   Resources:
-    TestTable:
+    EnlaceTable:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: testTable
+        TableName: enlacesTable
         AttributeDefinitions:
           - AttributeName: id
             AttributeType: S
