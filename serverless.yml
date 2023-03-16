@@ -28,6 +28,10 @@ functions:
     handler: enlaces/enlace/enlace.handler
     events:
       - http: GET enlaces/{id}
+  actualizarEnlace:
+    handler: enlaces/actualizar/actualizar.handler
+    events:
+      - http: GET enlaces/actualizar/{id}
 resources:
   Resources:
     EnlaceTable:
