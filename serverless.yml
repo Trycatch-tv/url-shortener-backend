@@ -40,6 +40,10 @@ functions:
     handler: enlaces/resolver/resolver.handler
     events:
       - http: GET enlaces/resolver/{enlace_corto}
+  expiracionEnlace:
+    handler: enlaces/expiracion/expiracion.handler
+    events:
+      - http: GET enlaces/expiracion/{id}
 
 resources:
   Resources:
