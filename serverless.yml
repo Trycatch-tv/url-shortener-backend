@@ -15,35 +15,59 @@ functions:
   function1:
     handler: index.handler
     events:
-      - http: GET fun
+      - http:
+          path: fun
+          cors: true
+          method: get
   crearEnlace:
     handler: enlaces/crear/crear.handler
     events:
-      - http: GET enlaces/crear
+      - http:
+          path: enlaces/crear
+          cors: true
+          method: get
   listarEnlaces:
     handler: enlaces/listar/listar.handler
     events:
-      - http: GET enlaces/listar
+      - http:
+          path: enlaces/listar
+          method: get
+          cors: true
   enlace:
     handler: enlaces/enlace/enlace.handler
     events:
-      - http: GET enlaces/{id}
+      - http:
+          path: enlaces/{id}
+          cors: true
+          method: get
   actualizarEnlace:
     handler: enlaces/actualizar/actualizar.handler
     events:
-      - http: GET enlaces/actualizar/{id}
+      - http:
+          path: enlaces/actualizar/{id}
+          cors: true
+          method: get
   eliminarEnlace:
     handler: enlaces/eliminar/eliminar.handler
     events:
-      - http: GET enlaces/eliminar/{id}
+      - http:
+          path: enlaces/eliminar/{id}
+          cors: true
+          method: get
   resolverEnlace:
     handler: enlaces/resolver/resolver.handler
     events:
-      - http: GET enlaces/resolver/{enlace_corto}
+      - http:
+          path: enlaces/resolver/{enlace_corto}
+          cors: true
+          method: get
   expiracionEnlace:
     handler: enlaces/expiracion/expiracion.handler
     events:
-      - http: GET enlaces/expiracion/{id}
+      - http:
+          path: enlaces/expiracion/{id}
+          cors: true
+          method: get
 
 resources:
   Resources:
