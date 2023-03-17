@@ -36,6 +36,11 @@ functions:
     handler: enlaces/eliminar/eliminar.handler
     events:
       - http: GET enlaces/eliminar/{id}
+  resolverEnlace:
+    handler: enlaces/resolver/resolver.handler
+    events:
+      - http: GET enlaces/resolver/{enlace_corto}
+
 resources:
   Resources:
     EnlaceTable:

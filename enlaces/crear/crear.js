@@ -11,7 +11,7 @@ module.exports.handler = async (event) => {
   const fecha_expiracion = event.queryStringParameters.fecha_expiracion
   const usuario = "12345"
 
-  const createAt = new Date().toISOString()
+  const createdAt = new Date().toISOString()
   const id = v4()
 
   const nuevoEnlace = {
@@ -21,7 +21,7 @@ module.exports.handler = async (event) => {
     fecha_expiracion,
     usuario,
     estado: 1,
-    createAt,
+    createdAt,
   }
 
   await dynamodb
