@@ -24,6 +24,7 @@ module.exports.handler = async (event) => {
     statusCode: 301,
     headers: {
       Location: enlace.enlace_original,
+      "Access-Control-Allow-Origin": "*",
     },
     body: JSON.stringify(
       {
